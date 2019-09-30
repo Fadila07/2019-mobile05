@@ -5,4 +5,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="red_fragment">Red Fragment</string>
     <string name="blue_fragment">Blue Fragment</string>
+    <string name="name">Handstand Pushups</string>
+    <string name="star">Advanced</string>
+    <string name="note">The handstand push-up (press-up) - also called the vertical push-up (press-up) or the inverted push-up (press-up) also called \"commandos\"- is a type of push-up exercise where the body is positioned in a handstand. To prepare the strength until one has built adequate balance.</string>
 </resources>
