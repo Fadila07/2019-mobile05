@@ -32,6 +32,7 @@ public class DynamicActivity extends AppCompatActivity {
         if(fragment == null || fragment instanceof BlueFragment){
             getSupportFragmentManager().beginTransaction()
                 .replace(R.id.dynamic_fragment_placeholder, new RedFragment(), "RED_FRAGMENT")
+            .setCustomAnimations(R.anim.enter_from_left, R.anim.exit_from_left, R.anim.enter_from_right, R.anim.exit_from_right)
                 .addToBackStack(null)
                     .commit();
         }
@@ -50,6 +51,7 @@ public class DynamicActivity extends AppCompatActivity {
         if(fragment == null || fragment instanceof RedFragment){
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.dynamic_fragment_placeholder, new BlueFragment(), "BLUE_FRAGMENT")
+                    .setCustomAnimations(R.anim.enter_from_left, R.anim.exit_from_left, R.anim.enter_from_right, R.anim.exit_from_right)
                     .addToBackStack(null)
                     .commit();
         }
